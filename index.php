@@ -2,10 +2,13 @@
 <html>
 	<head>
 		<title>AUDIO SKETCHES</title>
-		<script type="text/javascript" src="script.js"></script>
-		<script type="text/javascript" src="jquery-1.7.1.js"></script>
-		<script type="text/javascript" src="tablefilter.js"></script>
-		<link rel="stylesheet" type="text/css" href="main.css">	
+
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="js/tablefilter.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css">	
+		<link rel="stylesheet" type="text/css" href="css/filtergrid.css">	
+
 		<script type="text/javascript">
 		<!--
 		/*	var passPrompt;
