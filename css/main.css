@@ -11,12 +11,13 @@ html, body
 	margin: auto;
 }
 
-.noEdit
+table div.comments
 {
 	height: 20px;
 	overflow: hidden;
 }
-.edit
+
+table div.comments.editing
 {
 	width: 300px;
 	height: 140px;

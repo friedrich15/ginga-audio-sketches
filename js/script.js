@@ -1,14 +1,15 @@
-function editContent(id) {
-	var div = $('#' + id);	
-	div.addClass("edit");
-	div.removeClass("noEdit");
+function editContentStart(element) {
+	var div = $(element);
+	div.addClass("editing");
 }
 
-function editContentDone(id) {
-	var div = $('#' + id);	
-	div.addClass("noEdit");
-	div.removeClass("edit");
-	saveChange(id);
+function editContentDone(element) {
+	var div = $(element);
+	div.removeClass("editing");
+}
+
+function editContentChanged(element) {
+  saveChange($(element).attr('id'));
 }
 
 function saveChange(id) {

@@ -36,6 +36,7 @@
 					<th>Comments</th>
 				</tr></thead>
 
+				<tbody>
 			<?php
 				$con = mysql_connect("localhost","eugen","eitJedEstitJapoyp");
 				if (!$con)
@@ -50,19 +51,21 @@
 			    	  $_player="<audio controls='controls' preload='none'>
 					  <source src='audio/" . $row['Location'] . "'/>
 					  </audio>";
-					  echo "<tbody><tr>";	
+					  echo "<tr>";	
 					  echo "<td>" . $_player . "</td><td>" . $row['Name'] . "</td><td>" . $row['Album'] . "</td><td>";
-					  echo $row['Time'] . "</td><td>" . $row['Year'] . "</td><td></td><td><div class='noEdit' id='" . $row['id'];
-					  echo "' contenteditable onclick='editContent(this.id)' onblur='editContentDone(this.id)'>" . $row['Comments'] . "</div></td>";
-					  echo "</tr></tbody>";
+					  echo $row['Time'] . "</td><td>" . $row['Year'] . "</td><td></td><td><div class='comments' id='" . $row['id'];
+					  echo "' contenteditable onfocus='javascript:editContentStart(this)' onblur='javascript:editContentDone(this)' onchange='javascript:editContentChanged(this)'>" . $row['Comments'] . "</div></td>";
+					  echo "</tr>";
 					  }
 
 				mysql_close($con);
 			?>
-				<script language="javascript" type="text/javascript">
-					setFilterGrid("table1");
-				</script>
+				</tbody>
 			</table>
+
+			<script language="javascript" type="text/javascript">
+				setFilterGrid("table1");
+			</script>
 
 		</div>
 	</body>
