@@ -1,0 +1,79 @@
+html, body
+{
+	text-align: center;
+	font-family: arial;
+	background-color: #fff;
+}
+
+.div_table
+{
+	width: 98%;
+	margin: auto;
+}
+
+.noEdit
+{
+	height: 20px;
+	overflow: hidden;
+}
+.edit
+{
+	width: 300px;
+	height: 140px;
+}
+
+a
+{
+	font-size: 200%;
+	color: #1a1;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #4b4;
+}
+
+table
+{
+	cursor: default;
+	margin: 0;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 90%;
+	border: 2px solid #aaa;
+	border-collapse: collapse;
+}
+
+tr
+{
+	background-color: #efe;
+	border: 1px solid #bbb;
+}
+
+tr:hover
+{
+	background-color: #cdc;
+}
+
+[contenteditable]:hover
+{
+	background-color: #fff;
+	color: #aaa;
+}
+[contenteditable]:focus
+{
+	background-color: #fff;
+	color: #494;
+}
+
+td
+{
+	border: 1px dashed #ccc;
+}
+
+th
+{
+	border: 1px dotted #aaa;
+	background-color: #ded;
+	padding: 1px 7px;
+}
